@@ -16,6 +16,15 @@ public class EmpController {
 	private static final Logger logger = LoggerFactory.getLogger(EmpController.class);
     @Autowired
     EmpService e;
+	/*RQ_1361_code changes_start*/
+	@RequestMapping("/v1")
+	public String Show() {
+
+		logger.info("This is First Method");
+
+		return "Hello";
+	}
+	/*RQ_1361_code changes_end*/
     
 	@RequestMapping("/v1")
 	public String Show() {
